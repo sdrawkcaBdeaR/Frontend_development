@@ -10,9 +10,31 @@ function App() {
 
     return(
         <>
-            <Block imgadd={imgadds[0]} heading={headings[0]} content={contents[0]} />
-            <Block imgadd={imgadds[1]} heading={headings[1]} content={contents[1]} />
-            <Block imgadd={imgadds[2]} heading={headings[2]} content={contents[2]} />
+            <section class="hero is-danger">
+                <div class="hero-body">
+                    <p class="title">
+                    CUTE ANIMALS
+                    </p>
+                    <p class="subtitle">
+                    About their owners
+                    </p>
+                </div>
+            </section>
+            <div className="container">
+                <section className='section'>
+                    <div className="columns">
+                        <div className="column is-4">
+                            <Block imgadd={imgadds[0]} heading={headings[0]} content={contents[0]} />
+                        </div>
+                        <div className="column is-4">
+                            <Block imgadd={imgadds[1]} heading={headings[1]} content={contents[1]} />
+                        </div>
+                        <div className="column is-4">
+                            <Block imgadd={imgadds[2]} heading={headings[2]} content={contents[2]} />
+                        </div>
+                    </div>
+                </section>
+            </div>
         </>
     )
 }
