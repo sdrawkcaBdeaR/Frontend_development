@@ -1,0 +1,4 @@
+.imagelist {
+    columns: 6 300px;
+    column-gap: 10px;
+}
